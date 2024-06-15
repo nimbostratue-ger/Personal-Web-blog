@@ -102,5 +102,12 @@ img{
 }
 
 i:hover{
-   color: rgb(46, 59, 62);
+
+}
+
+.social:visited{
+    color:inherit;
+}
+.social:hover{
+    color: rgb(46, 59, 62);
 }
