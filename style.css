@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Style the header */
+.header {
+    background-color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.nav {
+    background-color: steelblue;
+    display: flex;
+
+}
+
+.nav a {
+    text-decoration: none;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size:larger
+
+}
+
+.nav a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+.active{
+    background-color: #444;
+}
+.profile {
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.main {
+    flex: 4
+}
+
+.side {
+    flex: 1
+}
+
+/* Style the footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background:steelblue;
+    margin-top: 20px;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image {
+    background-color: lightgray;
+    margin:0 auto;
+    padding:10px;
+    margin:0 auto;
+    width:80%;
+
+}
+
+img{
+      width:100%;
+}
+
+
+.publications li, .projects li{
+    margin:10px 0;
+}
+.CV h1,.publications h1, .projects h1 {
+    margin:10px 0;
+}
+
+@media (max-width:500px) {
+    .row,
+    .nav {
+        flex-direction: column;
+    }
+
+    .profile {
+        margin-left: 0;
+    }
+}
+
+i:hover{
+   color: rgb(46, 59, 62);
+}

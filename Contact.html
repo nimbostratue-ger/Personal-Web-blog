@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .container_form{
+            display: flex;
+            flex-direction: column;
+            width:50%;
+        }
+        input, textarea{
+            margin:5px 0 10px 0;
+            padding:12px 20px;
+            border: 1px solid darkgray;
+            border-radius: 4px;
+            box-sizing:border-box;
+            
+        }
+        input[type=submit] {
+            background-color: #333;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width:800px){
+            .container_form{
+                   width:100%;            
+                }
+        }
+
+    </style>
+</head>
+
+<div class="header">
+    <img src="./images/panoram.jpg" alt="">
+</div>
+
+<body>
+    <div class="nav">
+        <a href="./My website.html" >Home</a>
+        <a href="javascript:void(0)" class="active" >Contact</a>
+        <a href="./About.html">About</a>
+        <a href="./My profile.html" class="profile">My Profile</a>
+    </div>
+
+    <h1>Contact me</h1>
+    <p> You can contact me directly by sending email to <strong>nimbostratueg@gmail.com</strong> or by filling the form below.</p>
+    <p><strong>Note:</strong> When you submit the form it will attempt to use your mail server to send an email since this is a static page and no backend script or server side language is used. So if you are not sure if your email server configured correctly, then send me an email directly at my email shown above.</p>
+
+    <form action="mailto:nimbostratueg@gmail.com">
+        <div class="container_form">
+        <label for="fname">First Name:</label>
+        <input type="text" id='fname' name='fname' placeholder="Enter you first Name" required autofocus> <br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id='lname' name='lname' placeholder="Enter your last Name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id='email' name='email' placeholder="Enter your email" required><br>
+
+        <label for="message">Enter your message below:</label><br>
+        <textarea name="message" rows="10" cols="100" placeholder="write something" /></textarea>
+      
+        <input type="submit" value="Submit">
+        </div>
+    </form>
+    <footer>
+        <p>Find me on social media.</p>
+        <i style="font-size:1.8em;" class="fa fa-facebook-official"></i>
+        <i style="font-size:1.8em;" class="fa fa-instagram"></i>
+        <i style="font-size:1.8em;" class="fa fa-snapchat"></i>
+        <i style="font-size:1.8em;" class="fa fa-pinterest-p"></i>
+        <i style="font-size:1.8em;" class="fa fa-twitter"></i>
+        <i style="font-size:1.8em;" class="fa fa-linkedin"></i>
+        <br/><br/>
+    </footer>
+</body>
+</html>
