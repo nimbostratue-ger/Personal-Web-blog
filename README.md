@@ -1,8 +1,6 @@
-# Personal Web Blog
-
 # Welcome to My Personal Web Blog
 
-Explore my personal website, portfolio, and projects. Below you can find links to my CVs, projects, and more.
+Here you can Explore my personal website, portfolio, and projects. Below you can find links to my CVs, projects, and more.
 
 ---
 
