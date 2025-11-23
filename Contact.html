@@ -1,90 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <style>
-        .container_form{
-            display: flex;
-            flex-direction: column;
-            width:50%;
-        }
-        input, textarea{
-            margin:5px 0 10px 0;
-            padding:12px 20px;
-            border: 1px solid darkgray;
-            border-radius: 4px;
-            box-sizing:border-box;
-            
-        }
-        input[type=submit] {
-            background-color: #333;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 20px;
-        }
+      .container_form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+      input,
+      textarea {
+        margin: 5px 0 10px 0;
+        padding: 12px 20px;
+        border: 1px solid darkgray;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: #333;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;
+      }
 
-        input[type=submit]:hover {
-            background-color: #555;
-        }
+      input[type="submit"]:hover {
+        background-color: #555;
+      }
 
-        @media screen and (max-width:800px){
-            .container_form{
-                   width:100%;            
-                }
+      @media screen and (max-width: 800px) {
+        .container_form {
+          width: 100%;
         }
-
+      }
     </style>
-</head>
+  </head>
+  <body>
+    <div class="header">
+      <img src="./images/panoram.jpg" alt="" />
+    </div>
 
-<div class="header">
-    <img src="./images/panoram.jpg" alt="">
-</div>
-
-<body>
     <div class="nav">
-        <a href="./index.html" >Home</a>
-        <a href="./Programs.html" >Programs</a>
-        <a href="javascript:void(0)" class="active" >Contact</a>
-        <a href="./About.html">About</a>
-        <a href="./My profile.html" class="profile">My Profile</a>
+      <a href="./index.html">Home</a>
+      <a href="./Programs.html">Programs</a>
+      <a href="javascript:void(0)" class="active">Contact</a>
+      <a href="./About.html">About</a>
+      <a href="./My profile.html" class="profile">My Profile</a>
     </div>
 
     <h1>Contact me</h1>
-    <p> You can contact me directly by sending email to <strong>nimbostratueg@gmail.com</strong> or by filling the form below.</p>
-    <p><strong>Note:</strong> When you submit the form it will attempt to use your mail server to send an email since this is a static page and no backend script or server side language is used. So if you are not sure if your email server configured correctly, then send me an email directly at my email shown above.</p>
+    <p>
+      You can contact me directly by sending email to
+      <strong>nimbostratueg@gmail.com</strong> or by filling the form below.
+    </p>
+    <p>
+      <strong>Note:</strong> When you submit the form it will attempt to use
+      your mail server to send an email since this is a static page and no
+      backend script or server side language is used. So if you are not sure if
+      your email server configured correctly, then send me an email directly at
+      my email shown above.
+    </p>
 
     <form action="mailto:nimbostratueg@gmail.com">
-        <div class="container_form">
+      <div class="container_form">
         <label for="fname">First Name:</label>
-        <input type="text" id='fname' name='fname' placeholder="Enter you first Name" required autofocus> <br>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Enter you first Name"
+          required
+          autofocus
+        />
+        <br />
 
         <label for="lname">Last Name:</label>
-        <input type="text" id='lname' name='lname' placeholder="Enter your last Name" required><br>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="Enter your last Name"
+          required
+        /><br />
 
         <label for="email">Email:</label>
-        <input type="email" id='email' name='email' placeholder="Enter your email" required><br>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        /><br />
 
-        <label for="message">Enter your message below:</label><br>
-        <textarea name="message" rows="10" cols="100" placeholder="write something" /></textarea>
-      
-        <input type="submit" value="Submit">
-        </div>
+        <label for="message">Enter your message below:</label><br />
+        <textarea
+          name="message"
+          rows="10"
+          cols="100"
+          placeholder="write something"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </div>
     </form>
     <footer>
-        <p>Find me on social media.</p>
-        <a href="" class="social"><i style="font-size:1.8em;" class="fa-brands fa-facebook"></i></a>
-        <a href="" class="social"><i style="font-size:1.8em;" class="fa-brands fa-linkedin"></i></a> 
-        <a href="https://github.com/nimbostratue-ger" class="social"><i style="font-size:1.8em;" class="fa-brands fa-github"></i></a>
-        <br/><br/>
+      <p>Find me on social media.</p>
+      <a href="" class="social"
+        ><i style="font-size: 1.8em" class="fa-brands fa-facebook"></i
+      ></a>
+      <a href="" class="social"
+        ><i style="font-size: 1.8em" class="fa-brands fa-linkedin"></i
+      ></a>
+      <a href="https://github.com/nimbostratue-ger" class="social"
+        ><i style="font-size: 1.8em" class="fa-brands fa-github"></i
+      ></a>
+      <br /><br />
     </footer>
-</body>
+  </body>
 </html>
